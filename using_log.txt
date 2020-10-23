@@ -1,0 +1,256 @@
+date：20201015
+一、
+(ll_env) G:\python_work\learning_log>django-admin.py startproject learning_log .
+
+(ll_env) G:\python_work\learning_log>dir
+ 驱动器 G 中的卷是 新加卷
+ 卷的序列号是 007D-921D
+
+ G:\python_work\learning_log 的目录
+
+2020/10/15  11:26    <DIR>          .
+2020/10/15  11:26    <DIR>          ..
+2020/10/15  11:26    <DIR>          learning_log
+2020/10/15  11:06    <DIR>          ll_env
+2020/10/15  11:26               690 manage.py
+               1 个文件            690 字节
+               4 个目录 122,535,444,480 可用字节
+
+(ll_env) G:\python_work\learning_log>dir learning_log
+ 驱动器 G 中的卷是 新加卷
+ 卷的序列号是 007D-921D
+
+ G:\python_work\learning_log\learning_log 的目录
+
+2020/10/15  11:26    <DIR>          .
+2020/10/15  11:26    <DIR>          ..
+2020/10/15  11:26               417 asgi.py
+2020/10/15  11:26             3,200 settings.py
+2020/10/15  11:26               775 urls.py
+2020/10/15  11:26               417 wsgi.py
+2020/10/15  11:26                 0 __init__.py
+               5 个文件          4,809 字节
+               2 个目录 122,535,444,480 可用字节
+
+(ll_env) G:\python_work\learning_log>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+(ll_env) G:\python_work\learning_log>dir
+ 驱动器 G 中的卷是 新加卷
+ 卷的序列号是 007D-921D
+
+ G:\python_work\learning_log 的目录
+
+2020/10/15  11:32    <DIR>          .
+2020/10/15  11:32    <DIR>          ..
+2020/10/15  11:30           131,072 db.sqlite3
+2020/10/15  11:30    <DIR>          learning_log
+2020/10/15  11:06    <DIR>          ll_env
+2020/10/15  11:26               690 manage.py
+2020/10/15  11:33             2,257 using_log.txt
+               3 个文件        134,019 字节
+               4 个目录 122,535,301,120 可用字节
+
+(ll_env) G:\python_work\learning_log>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 15, 2020 - 11:35:27
+Django version 3.1.2, using settings 'learning_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Oct/2020 11:36:55] "GET / HTTP/1.1" 200 16351
+[15/Oct/2020 11:36:55] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[15/Oct/2020 11:36:55] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[15/Oct/2020 11:36:55] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+Not Found: /favicon.ico
+[15/Oct/2020 11:36:55] "GET /favicon.ico HTTP/1.1" 404 1978
+[15/Oct/2020 11:36:55] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+
+(ll_env) G:\python_work\learning_log>
+(ll_env) G:\python_work\learning_log>
+(ll_env) G:\python_work\learning_log>de
+'de' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+(ll_env) G:\python_work\learning_log>
+
+
+二、
+(ll_env) G:\python_work\learning_log>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 15, 2020 - 12:29:17
+Django version 3.1.2, using settings 'learning_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+G:\python_work\learning_log\learning_log\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 15, 2020 - 12:50:38
+Django version 3.1.2, using settings 'learning_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+(ll_env) G:\python_work\learning_log>python manege.py startapp learning_logs
+D:\Electronic-software\Python3\python.exe: can't open file 'manege.py': [Errno 2] No such file or directory
+
+(ll_env) G:\python_work\learning_log>python manage.py startapp learning_logs
+
+(ll_env) G:\python_work\learning_log>python manage.py makemigrations learning_logs
+Migrations for 'learning_logs':
+  learning_logs\migrations\0001_initial.py
+    - Create model Topic
+
+(ll_env) G:\python_work\learning_log>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, learning_logs, sessions
+Running migrations:
+  Applying learning_logs.0001_initial... OK
+
+(ll_env) G:\python_work\learning_log>python manage.py createsuperuser
+Username (leave blank to use 'admin'): ll_admin
+Email address:
+Password:
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: N
+Password:
+Password (again):
+Superuser created successfully.
+
+三、
+(ll_env) G:\python_work\learning_log>python manage.py makemigrations learning_logs
+Migrations for 'learning_logs':
+  learning_logs\migrations\0002_entry.py
+    - Create model Entry
+
+(ll_env) G:\python_work\learning_log>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, learning_logs, sessions
+Running migrations:
+  Applying learning_logs.0002_entry... OK
+
+(ll_env) G:\python_work\learning_log>python manage.py shell
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from learning_logs.models import Topic
+>>> Topic.objects.all()
+<QuerySet [<Topic: WeiQi>, <Topic: Python>]>
+>>> topics = Topic.objects.all()
+>>> for topic in topics:
+... print(topic.id,topic)
+  File "<console>", line 2
+    print(topic.id,topic)
+    ^
+IndentationError: expected an indented block
+>>> for topic in topics:
+...     print(topic.id, topic)
+...
+1 WeiQi
+2 Python
+>>> t = Topic.objects.get(id=1)
+>>> t.text
+'WeiQi'
+>>> t.date_added
+datetime.datetime(2020, 10, 15, 10, 27, 21, 329446, tzinfo=<UTC>)
+>>> t.entry_set.all()
+<QuerySet [<Entry: 围棋，是一种策略型两人棋类游戏，中国古时称"弈"，西方名称"Go"。流行于东亚国家(中、日、韩、朝)...>]>
+
+
+date：20201016
+
+(ll_env) G:\python_work\learning_log>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 16, 2020 - 23:34:47
+Django version 3.1.2, using settings 'learning_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[17/Oct/2020 00:28:14] "GET / HTTP/1.1" 200 115
+[17/Oct/2020 00:30:31] "GET /admin/ HTTP/1.1" 200 6229
+[17/Oct/2020 00:30:31] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[17/Oct/2020 00:30:31] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[17/Oct/2020 00:30:59] "GET /admin/ HTTP/1.1" 200 6229
+
+G:\python_work\learning_log\learning_log\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 17, 2020 - 00:34:18
+Django version 3.1.2, using settings 'learning_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+
+date：20201017
+
+G:\python_work\learning_log\learning_logs\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+?: (2_0.W001) Your URL pattern 'topics/(?P<topic_id>\d+)/' [name='topic'] has a route that contains '(?P<', begins with a '^', or ends with a '$'. This was likely an oversight when migrating to django.urls.path().
+
+System check identified 1 issue (0 silenced).
+October 17, 2020 - 12:14:04
+Django version 3.1.2, using settings 'learning_log.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[17/Oct/2020 12:14:07] "GET /topics/(%3FP1%5Cd+)/ HTTP/1.1" 200 608
+[17/Oct/2020 12:14:11] "GET /topics/(%3FP2%5Cd+)/ HTTP/1.1" 200 626
+[17/Oct/2020 12:27:13] "GET /topics/(%3FP1%5Cd+)/ HTTP/1.1" 200 608
+[17/Oct/2020 12:27:15] "GET /topics/(%3FP2%5Cd+)/ HTTP/1.1" 200 626
+[17/Oct/2020 12:27:19] "GET /topics/(%3FP1%5Cd+)/ HTTP/1.1" 200 608
+
+
+
+
+
+
+
+
